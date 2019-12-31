@@ -51,26 +51,25 @@ public class Main {
         int reat = s.nextInt();
         s.close();
 
-        if (reat >= 25 && reat <= 100) {
-            if (reat < 25) {
+            if (reat < 25 && reat >= 0) {
                 System.out.println("F");
             }
-            if (reat >= 25 && reat < 45) {
+            else if (reat >= 25 && reat < 45) {
                 System.out.println("E");
             }
-            if (reat >= 45 && reat < 50) {
+            else if (reat >= 45 && reat < 50) {
                 System.out.println("D");
             }
-            if (reat >= 50 && reat < 60) {
+            else if (reat >= 50 && reat < 60) {
                 System.out.println("C");
             }
-            if (reat >= 60 && reat < 80) {
+            else if (reat >= 60 && reat < 80) {
                 System.out.println("B");
             }
-            if (reat >= 80) {
+            else if (reat >= 80 && reat <= 100) {
                 System.out.println("A");
             }
-        } else
+            else
             System.out.println("Это не оценка");
     }
 
